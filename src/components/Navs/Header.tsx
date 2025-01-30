@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ThemeToggleBtn from "../DarkThemeComs/ThemeToggleBtn";
 import DesktopMenu from "./DesktopMenu";
+import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   return (
@@ -15,13 +16,16 @@ const Header = () => {
           </Link>
 
           {/* desktop menu item  & theme switcher */}
-          <div className="flex items-center gap-8">
-            <div className="hidden lg:flex">
-              <DesktopMenu />
-            </div>
-            <div className="">
-              <ThemeToggleBtn />
-            </div>
+          <div className="hidden items-center gap-8 lg:flex">
+            <DesktopMenu />
+
+            <ThemeToggleBtn />
+          </div>
+
+          {/* Mobile Menu & Theme Switcher */}
+
+          <div className="lg:hidden">
+            <MobileMenu />
           </div>
         </div>
       </header>

@@ -19,6 +19,7 @@ const DesktopMenu = () => {
               href={item.href}
               className={` ${pathName === item.href ? "border-b-2 border-default-pink text-default-pink" : "dark:hover:text-default-pink"}`}
             >
+              {<item.icon />}
               {item.name}
             </Link>
           </MenubarMenu>
