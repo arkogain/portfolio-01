@@ -24,7 +24,8 @@ const Header = () => {
 
           {/* Mobile Menu & Theme Switcher */}
 
-          <div className="lg:hidden">
+          <div className="flex items-center gap-5 lg:hidden">
+            <ThemeToggleBtn />
             <MobileMenu />
           </div>
         </div>

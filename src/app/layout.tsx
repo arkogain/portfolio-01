@@ -1,6 +1,7 @@
 import Header from "@/components/Navs/Header";
 import "./globals.css";
 import ThemeProvider from "@/components/DarkThemeComs/ThemeProvider";
+import Footer from "@/components/Footer/Footer";
 
 // export const metadata: Metadata = {
 //   title: "Create Next App",
@@ -30,6 +31,9 @@ const RootLayout = ({ children }: RootLayoutPropsType) => {
 
           {/* main */}
           <main>{children}</main>
+
+          {/* Footer */}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
