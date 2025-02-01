@@ -1,8 +1,8 @@
 import { JetBrains_Mono } from "next/font/google";
 
-export const jetbrainsMono = JetBrains_Mono({
+export const jetbrains_mono = JetBrains_Mono({
   subsets: ["latin"],
   display: "swap",
-  adjustFontFallback: true,
-  variable: "--font-jetbrains-mono",
+  adjustFontFallback: false,
+  variable: "--font-jetbrains",
 });

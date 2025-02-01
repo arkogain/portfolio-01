@@ -1,5 +1,3 @@
-import { jetbrainsMono } from "@/lib/font";
-import { JetBrains_Mono } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -17,7 +15,7 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        jetbrains: ["var(--font-jetbrains-mono)"],
+        jetbrains: ["var(--font-jetbrains)"],
       },
       colors: {
         "green-cyan": "#00ffb7",
