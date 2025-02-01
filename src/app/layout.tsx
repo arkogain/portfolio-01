@@ -30,7 +30,7 @@ const RootLayout = ({ children }: RootLayoutPropsType) => {
           <Header />
 
           {/* main */}
-          <main>{children}</main>
+          <main className="my-12">{children}</main>
 
           {/* Footer */}
           <Footer />
