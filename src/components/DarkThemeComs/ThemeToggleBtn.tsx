@@ -13,7 +13,7 @@ const ThemeToggleBtn = () => {
     <>
       <button
         onClick={handleThemeChange}
-        className="flex items-center rounded-lg bg-foreground/5 p-2"
+        className="flex items-center"
       >
         <Sun
           size={24}

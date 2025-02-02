@@ -12,12 +12,12 @@ const DesktopMenu = () => {
 
   return (
     <>
-      <Menubar className="flex gap-5 border-0 bg-transparent p-4 text-base font-semibold">
+      <Menubar className="flex gap-5 border-0 bg-transparent p-4 font-jetbrains text-base font-semibold">
         {navItemsLinks.map((item) => (
           <MenubarMenu key={item.id}>
             <Link
               href={item.href}
-              className={` ${pathName === item.href ? "border-b-2 border-default-pink text-default-pink" : "dark:hover:text-default-pink"}`}
+              className={` ${pathName === item.href ? "border-b-2 border-default-pink text-default-pink" : "hover:text-default-pink"}`}
             >
               {<item.icon />}
               {item.name}

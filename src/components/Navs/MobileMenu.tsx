@@ -1,9 +1,10 @@
 "use client";
 
+import { sheetToggleAtom } from "@/lib/atom";
 import { navItemsLinks } from "@/lib/information";
+import { useAtom } from "jotai";
 import { Menu } from "lucide-react";
 import Link from "next/link";
-import { Accordion, AccordionItem } from "../ui/accordion";
 import {
   Sheet,
   SheetContent,
@@ -12,9 +13,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "../ui/sheet";
-import ThemeToggleBtn from "../DarkThemeComs/ThemeToggleBtn";
-import { useAtom } from "jotai";
-import { sheetToggleAtom } from "@/lib/atom";
 
 const MobileMenu = () => {
   const [sheetStatus, setSheetStatus] = useAtom(sheetToggleAtom);
@@ -34,7 +32,7 @@ const MobileMenu = () => {
 
         <SheetContent className="scrollbar-none flex flex-col gap-4 overflow-scroll overscroll-contain border-l-0 bg-background px-4 backdrop-blur-lg">
           <SheetHeader>
-            <SheetTitle className="font-jetbrains text-3xl font-semibold">
+            <SheetTitle className="mb-20 font-jetbrains text-3xl font-semibold">
               Luke <span className="text-default-pink">.</span>
             </SheetTitle>
           </SheetHeader>
@@ -46,9 +44,9 @@ const MobileMenu = () => {
                 key={item.id}
                 href={item.href}
                 onClick={() => setSheetStatus(false)}
-                className="flex flex-col items-center gap-3 font-jetbrains"
+                className="flex flex-col items-center gap-3 font-jetbrains text-lg font-semibold"
               >
-                <div className="hover:border-b-2 hover:border-deep-blue hover:text-light-blue dark:text-foreground dark:hover:border-default-pink dark:hover:text-default-pink">
+                <div className="border-b-2 border-transparent text-foreground hover:border-b-2 hover:border-default-pink hover:text-default-pink">
                   {item.name}
                 </div>
               </Link>
