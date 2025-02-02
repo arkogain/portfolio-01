@@ -19,7 +19,7 @@ const RootLayout = ({ children }: RootLayoutPropsType) => {
       className="dark"
       suppressHydrationWarning
     >
-      <body className="min-h-dvh bg-[url('/backgroundImages/desktop-background-v2.png')] bg-cover bg-fixed bg-top bg-no-repeat">
+      <body className="bg-[url('/backgroundImages/desktop-background-v2.png')] bg-cover bg-fixed bg-top bg-no-repeat">
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -30,7 +30,7 @@ const RootLayout = ({ children }: RootLayoutPropsType) => {
           <Header />
 
           {/* main */}
-          <main className="my-12">{children}</main>
+          <main className="my-16">{children}</main>
 
           {/* Footer */}
           <Footer />
