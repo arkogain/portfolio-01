@@ -2,6 +2,7 @@ import Header from "@/components/Navs/Header";
 import "./globals.css";
 import ThemeProvider from "@/components/DarkThemeComs/ThemeProvider";
 import Footer from "@/components/Footer/Footer";
+import { jetbrains_mono } from "@/lib/font";
 
 // export const metadata: Metadata = {
 //   title: "Create Next App",
@@ -19,7 +20,9 @@ const RootLayout = ({ children }: RootLayoutPropsType) => {
       className="dark"
       suppressHydrationWarning
     >
-      <body className="min-h-dvh bg-[url('/backgroundImages/desktop-background-v2.png')] bg-cover bg-fixed bg-top bg-no-repeat">
+      <body
+        className={`${jetbrains_mono.variable} bg-[url('/backgroundImages/desktop-background-v2.png')] bg-cover bg-fixed bg-top bg-no-repeat`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -30,7 +33,9 @@ const RootLayout = ({ children }: RootLayoutPropsType) => {
           <Header />
 
           {/* main */}
-          <main className="my-12">{children}</main>
+          <main className="container mx-auto max-w-screen-xl px-6 py-20 lg:py-0">
+            {children}
+          </main>
 
           {/* Footer */}
           <Footer />
