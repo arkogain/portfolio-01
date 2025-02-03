@@ -67,31 +67,35 @@ const page = () => {
               href={""}
               className="rounded-full border border-foreground bg-transparent p-3 text-foreground hover:border-background hover:bg-default-pink hover:text-white"
             >
-              <Github size={16} />
+              <Github size={20} />
             </Link>
+
             <Link
               href={""}
               className="rounded-full border border-foreground bg-transparent p-3 text-foreground hover:border-background hover:bg-default-pink hover:text-white"
             >
-              <Linkedin size={16} />
+              <Linkedin size={20} />
             </Link>
+
             <Link
               href={""}
               className="rounded-full border border-foreground bg-transparent p-3 text-foreground hover:border-background hover:bg-default-pink hover:text-white"
             >
-              <Mail size={16} />
+              <Mail size={20} />
             </Link>
+
             <Link
               href={""}
               className="rounded-full border border-foreground bg-transparent p-3 text-foreground hover:border-background hover:bg-default-pink hover:text-white"
             >
-              <Facebook size={16} />
+              <Facebook size={20} />
             </Link>
+
             <Link
               href={""}
               className="rounded-full border border-foreground bg-transparent p-3 text-foreground hover:border-background hover:bg-default-pink hover:text-white"
             >
-              <Twitter size={16} />
+              <Twitter size={20} />
             </Link>
           </div>
         </div>
