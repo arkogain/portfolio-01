@@ -6,13 +6,10 @@ import { useTheme } from "next-themes";
 const ThemeToggleBtn = () => {
   const { theme, setTheme } = useTheme();
 
-  const handleThemeChange = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
   return (
     <>
       <button
-        onClick={handleThemeChange}
+        onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
         className="flex items-center"
       >
         <Sun
