@@ -8,9 +8,9 @@ const page = () => {
       <section className="min-h-[90dvh] lg:py-20">
         <Tabs
           defaultValue="education"
-          className="flex flex-col gap-12 lg:flex-row lg:gap-32"
+          className="flex flex-col gap-10 lg:flex-row lg:gap-20"
         >
-          <TabsList className="flex h-[30dvh] flex-col gap-3 bg-transparent font-jetbrains">
+          <TabsList className="flex h-full flex-col justify-start gap-3 bg-transparent font-jetbrains">
             {/* <TabsTrigger
               className="w-64 rounded-lg bg-foreground/5 py-3 text-lg data-[state=active]:bg-default-pink data-[state=active]:text-white"
               value="exprience"
