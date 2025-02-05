@@ -29,7 +29,9 @@ import { VscVscodeInsiders } from "react-icons/vsc";
 const SkillsTab = () => {
   return (
     <>
-      <div className="text-4xl font-bold text-default-pink">My Skills</div>
+      <div className="text-4xl font-bold text-default-pink dark:text-foreground">
+        My Skills
+      </div>
 
       <div className="mt-4 text-foreground/50">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, cumque!

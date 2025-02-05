@@ -3,7 +3,9 @@ import { educationDetails } from "@/lib/information";
 const EducationTab = () => {
   return (
     <>
-      <div className="text-4xl font-bold text-default-pink">My Education</div>
+      <div className="text-4xl font-bold text-default-pink dark:text-foreground">
+        My Education
+      </div>
 
       <div className="mt-4 text-foreground/50">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,

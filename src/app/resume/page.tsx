@@ -1,3 +1,4 @@
+import AboutTab from "@/components/ResumeComps/AboutTab";
 import EducationTab from "@/components/ResumeComps/EducationTab";
 import SkillsTab from "@/components/ResumeComps/SkillsTab";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -67,10 +68,10 @@ const page = () => {
           </TabsContent>
 
           <TabsContent
-            className=""
+            className="text-center font-jetbrains lg:text-start"
             value="about-me"
           >
-            About Me
+            <AboutTab />
           </TabsContent>
         </Tabs>
       </section>
