@@ -1,8 +1,4 @@
-import {
-  ArrowRightCircle,
-  ArrowUpCircle,
-  ArrowUpRightSquare,
-} from "lucide-react";
+import { ArrowRightCircle } from "lucide-react";
 
 const AboutTab = () => {
   return (
