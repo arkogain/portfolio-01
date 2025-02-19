@@ -4,7 +4,7 @@ const page = () => {
   return (
     <>
       <section className="grid grid-cols-1 place-items-center lg:grid-cols-2">
-        {/* left Side */}
+        {/* Desktop left Side */}
         <div className="space-y-5">
           <div className="flex items-center gap-3">
             <div className="rounded-lg bg-foreground/10 p-3">
@@ -36,7 +36,7 @@ const page = () => {
             </div>
           </div>
         </div>
-        {/* left Side */}
+        {/* Desktop left Side */}
         <div className=""></div>
       </section>
     </>

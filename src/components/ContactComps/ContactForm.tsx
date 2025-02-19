@@ -1,3 +1,5 @@
+"use client";
+
 import { useForm } from "react-hook-form";
 import {
   Form,
@@ -10,31 +12,26 @@ import {
 } from "../ui/form";
 
 const ContactForm = () => {
-  //   const rhForm = useForm(()=>{
-  //      Resolver: zodResolver(),
-  //     defaultValues: {
-
-  //     },
-
-  //   }
-  // );
+  const rhForm = useForm();
 
   return (
     <>
-      <Form>
-        <FormField
-          control={}
-          name="..."
-          render={() => (
-            <FormItem>
-              <FormLabel />
-              <FormControl>{/* Your form field */}</FormControl>
-              <FormDescription />
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-      </Form>
+      <div className="">
+        <Form {...rhForm}>
+          <FormField
+            control={rhForm.control}
+            name="..."
+            render={() => (
+              <FormItem>
+                <FormLabel />
+                <FormControl>{/* Your form field */}</FormControl>
+                <FormDescription />
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+        </Form>
+      </div>
     </>
   );
 };
