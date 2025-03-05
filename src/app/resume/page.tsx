@@ -6,7 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 const page = () => {
   return (
     <>
-      <section className="min-h-[90dvh] lg:py-20">
+      <section className="min-h-[90dvh] py-0 lg:py-20">
         <Tabs
           defaultValue="education"
           className="flex flex-col gap-10 lg:flex-row lg:gap-20"

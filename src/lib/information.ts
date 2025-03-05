@@ -59,3 +59,39 @@ export const educationDetails = [
     subject: "",
   },
 ];
+
+export const projectDetails = [
+  {
+    id: "item01",
+    no: "01",
+    name: "Frontend Project",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit sunt facilis pariatur commodi magni dolorem, voluptatibus natus! Corrupti, inventore illum.",
+    languages: `HTML5, CSS3, JavaScript, React, Next.js, TailwindCSS, TypeScript, Node.js`,
+    link: "https://luke-portfolio-ag.netlify.app/",
+    githubLink: "https://github.com/LukeMichael/portfolio-01",
+    image: "/project1.webp",
+  },
+  {
+    id: "item02",
+    no: "02",
+    name: "Backend Project",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit sunt facilis pariatur commodi magni dolorem, voluptatibus natus! Corrupti, inventore illum.",
+    languages: `HTML5, CSS3, JavaScript, React, Next.js, TailwindCSS, TypeScript, Node.js, Express.js`,
+    link: "https://luke-portfolio-ag.netlify.app/",
+    githubLink: "https://github.com/LukeMichael/portfolio-01",
+    image: "/project2.jpg",
+  },
+  {
+    id: "item03",
+    no: "03",
+    name: "Fullstack Project",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit sunt facilis pariatur commodi magni dolorem, voluptatibus natus! Corrupti, inventore illum.",
+    languages: `HTML5, CSS3, JavaScript, React, Next.js, TailwindCSS, TypeScript, Node.js, Express.js, Directus, PostgreSQL`,
+    link: "https://luke-portfolio-ag.netlify.app/",
+    githubLink: "https://github.com/LukeMichael/portfolio-01",
+    image: "/project3.jpg",
+  },
+];
