@@ -1,17 +1,10 @@
 "use client";
 
+import SocialMediaIcons from "@/components/SocialMediaIcons";
 import { Button } from "@/components/ui/button";
-import Typewriter from "typewriter-effect";
-import {
-  Download,
-  Facebook,
-  Github,
-  Linkedin,
-  Mail,
-  Twitter,
-} from "lucide-react";
+import { Download } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+import Typewriter from "typewriter-effect";
 
 const page = () => {
   return (
@@ -62,42 +55,7 @@ const page = () => {
             </Button>
           </div>
 
-          <div className="mt-12 flex items-center justify-center gap-5 lg:justify-start">
-            <Link
-              href={""}
-              className="rounded-full border border-foreground bg-transparent p-3 text-foreground hover:border-background hover:bg-default-pink hover:text-white"
-            >
-              <Github size={20} />
-            </Link>
-
-            <Link
-              href={""}
-              className="rounded-full border border-foreground bg-transparent p-3 text-foreground hover:border-background hover:bg-default-pink hover:text-white"
-            >
-              <Linkedin size={20} />
-            </Link>
-
-            <Link
-              href={""}
-              className="rounded-full border border-foreground bg-transparent p-3 text-foreground hover:border-background hover:bg-default-pink hover:text-white"
-            >
-              <Mail size={20} />
-            </Link>
-
-            <Link
-              href={""}
-              className="rounded-full border border-foreground bg-transparent p-3 text-foreground hover:border-background hover:bg-default-pink hover:text-white"
-            >
-              <Facebook size={20} />
-            </Link>
-
-            <Link
-              href={""}
-              className="rounded-full border border-foreground bg-transparent p-3 text-foreground hover:border-background hover:bg-default-pink hover:text-white"
-            >
-              <Twitter size={20} />
-            </Link>
-          </div>
+          <SocialMediaIcons />
         </div>
       </section>
     </>

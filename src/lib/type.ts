@@ -13,3 +13,14 @@ export type educationDetailType = {
   marks: string;
   subject: string;
 };
+
+export type projectDetailType = {
+  id: string;
+  no: string;
+  name: string;
+  description: string;
+  languages: string;
+  link: string;
+  githubLink: string;
+  image: string;
+};

@@ -4,7 +4,6 @@ import { navItemsLinks } from "@/lib/information";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menubar, MenubarMenu } from "../ui/menubar";
-import { Home } from "lucide-react";
 
 const DesktopMenu = () => {
   const pathName = usePathname();
